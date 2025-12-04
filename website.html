@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Forecasting Jyväskylä's Climate with AI - Machine Learning project analyzing rainfall, snow, humidity, and temperature data"
+    />
+    <title>Forecasting Jyväskylä's Climate with AI</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="macbook-air">
+      <!-- Hero Section -->
+      <section>
+        <h1 class="forecasting-jyv-skyl" id="hero-heading">
+          Forecasting <br />Jyväskylä's <br />Climate with AI
+        </h1>
+        <p class="text-wrapper">
+          By analyzing rainfall, snow, humidity, and temperature data from Marjetas sensors, our team identifies hidden
+          patterns in local climate behavior. Using advanced ML models, including deep learning and classic algorithms,
+          we create forecasts, detect anomalies, and visualize the results.
+        </p>
+        <a href="#model-dropdown-container" class="button" aria-label="View Our Top Models">
+          <span class="div">View Our Top Models</span>
+        </a>
+
+        <div class="group-wrapper">
+          <figure class="group" role="images">
+            <div class="mask-group">
+              <img class="map" src="images/hero no location map.png" alt="Map of Jyväskylä" />
+              <img class="img" src="images/hero no location map.png" alt="Sensor location markers" />
+            </div>
+            <figcaption class="locations">
+              <div class="saaritie">📍<br />Saaritie</div>
+              <div class="tuulimyllyntie">📍<br />Tuulimyllyntie</div>
+              <div class="kaakkovuorentie">📍<br />Kaakkovuorentie</div>
+              <div class="kotaniementie">📍<br />Kotaniementie</div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SVG / IMAGE BEFORE MODEL SECTION -->
+      <section>
+        <figure class="svg-banner">
+          <img src="images/data.svg" alt="Decorative SVG Banner" />
+        </figure>
+      </section>
+
+      <!-- Models Section -->
+      <section id="model-dropdown-container">
+        <h2 class="text-wrapper-2">Our Top Performing Models</h2>
+        <p class="p">
+          We evaluated multiple machine learning approaches to predict rainfall events. Below are our top 3 models and
+          their predictions for four key areas in Jyväskylä.
+        </p>
+      </section>
+
+      <!-- Model Dropdowns -->
+      <section class="model-dropdown-container">
+        <!-- XGBoost -->
+        <button class="model-button" aria-expanded="false" aria-controls="xgboost-content">XGBoost</button>
+        <div class="model-content" id="xgboost-content" style="display:none;">
+          <div class="container">
+            <p class="text-wrapper-3">
+              XGBoost was applied as a gradient-boosted decision tree model to identify rainfall patterns. It performed well in capturing general trends and successfully detected many high-intensity peaks. The model also responded to rapid changes, though it sometimes overestimated smaller peaks and added minor noise during dry periods. Overall, it showed the most consistent performance among the tested tree-based approaches.
+            </p>
+            <div class="location-grid">
+              <div>
+                <h3 class="text-wrapper-4">Kaakkovuorentie</h3>
+                <h3 class="text-wrapper-5">Kotaniementie</h3>
+                <h3 class="text-wrapper-6">Saaritie</h3>
+                <h3 class="text-wrapper-7">Tuulimyllyntie</h3>
+                <div class="rectangle-14" role="img" aria-label="Kaakkovuorentie prediction chart"></div>
+                <div class="rectangle-15" role="img" aria-label="Kotaniementie prediction chart"></div>
+                <div class="rectangle-16" role="img" aria-label="Saaritie prediction chart"></div>
+                <div class="rectangle-17" role="img" aria-label="Tuulimyllyntie prediction chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prophet -->
+        <button class="model-button" aria-expanded="false" aria-controls="prophet-content">Prophet</button>
+        <div class="model-content" id="prophet-content" style="display:none;">
+          <div class="container_2">
+            <p class="text-wrapper-3">
+              Prophet used an additive modeling approach to represent rainfall trends and seasonal behaviors. It followed broad rainfall patterns effectively and produced smooth, interpretable predictions. The model had difficulty with sharp, sudden spikes and tended to underestimate their magnitude. Using a Savitzky–Golay smoothing filter before forecasting helped reduce noise and improved the clarity of major events.
+            </p>
+            <div class="location-grid">
+              <div>
+                <h3 class="text-wrapper-4">Timestamp 1</h3>
+                <h3 class="text-wrapper-5">Timestamp 2</h3>
+                <h3 class="text-wrapper-26">Timestamp 3</h3>
+                <h3 class="text-wrapper-27">Timestamp 2 savlog</h3>
+                <div class="rectangle-18" role="img" aria-label="Kaakkovuorentie prediction chart"></div>
+                <div class="rectangle-19" role="img" aria-label="Kotaniementie prediction chart"></div>
+                <div class="rectangle-20" role="img" aria-label="Saaritie prediction chart"></div>
+                <div class="rectangle-21" role="img" aria-label="Tuulimyllyntie prediction chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LSTM -->
+        <button class="model-button" aria-expanded="false" aria-controls="lstm-content">LSTM</button>
+        <div class="model-content" id="lstm-content" style="display:none;">
+          <div class="container">
+            <p class="text-wrapper-3">
+              The LSTM model was used to forecast rainfall by learning long-term patterns in the time-series data. After combining sensor data from several locations, the model generated predictions for four target areas. It captured overall rainfall trends reliably and produced stable results for gradual changes. However, it struggled with sudden spikes, often underestimating peak intensity and showing slight delays in sharp events.
+            </p>
+            <div class="location-grid">
+              <div>
+                <h3 class="text-wrapper-4">Kaakkovuorentie</h3>
+                <h3 class="text-wrapper-5">Kotaniementie</h3>
+                <h3 class="text-wrapper-6">Saaritie</h3>
+                <h3 class="text-wrapper-7">Tuulimyllyntie</h3>
+                <div class="rectangle-2" role="img" aria-label="Kaakkovuorentie prediction chart"></div>
+                <div class="rectangle-3" role="img" aria-label="Kotaniementie prediction chart"></div>
+                <div class="rectangle-4" role="img" aria-label="Saaritie prediction chart"></div>
+                <div class="rectangle-5" role="img" aria-label="Tuulimyllyntie prediction chart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Insights Section -->
+      <section>
+        <h2 class="text-wrapper-15">Insights</h2>
+        <h3 class="text-wrapper-11">Our sensor network reveals clear spatial and temporal weather patterns across Jyväskylä. Temperature and rainfall vary significantly between locations, and long-term data shows strong seasonal cycles and humidity-rainfall interactions.</h3>
+        <h4 class="text-wrapper-12">Mean Temperature (°C)</h4>
+        <h4 class="text-wrapper-30">Local temperatures vary across the region, with some stations showing consistently warmer or cooler conditions. These differences reflect local micro-climates shaped by terrain, vegetation, and urban surroundings.</h4>
+        <figure class="rectangle-6">
+          <iframe src="maps/map_mean_temp_colored.html" width="100%" height="100%" style="border:none;"></iframe>
+        </figure>
+        <h4 class="text-wrapper-13">Rainfall, Humidity and Temperature Over Time</h4>
+        <h4 class="text-wrapper-28">The long-term time series highlights strong seasonal temperature cycles, humidity spikes before rainfall events, and short, sharp rainfall peaks. Together, they illustrate how different atmospheric variables interact during weather events.</h4>
+        <figure class="rectangle-7">
+          <iframe src="maps/rain_temp_hum_timeseries.html" width="100%" height="100%" style="border:none;"></iframe>
+        </figure>
+        <h4 class="text-wrapper-14">Mean Rainfall Intensity (mm/h)</h4>
+        <h4 class="text-wrapper-31">Rainfall intensity is not evenly distributed. Certain areas experience more frequent or more intense rainfall events, revealing meaningful spatial rainfall patterns across Jyväskylä.</h4>
+        <figure class="rectangle-9">
+          <iframe src="maps/map_mean_rain_colored.html" width="100%" height="100%" style="border:none;"></iframe>
+        </figure>
+      </section>
+
+      <!-- Project Goal -->
+      <section>
+        <h2 class="text-wrapper-29">Project Goal & Approach</h2>
+        <figure class="rectangle-8">
+          <iframe src="https://www.youtube.com/embed/h1SetIdfycw?cc_load_policy=1" allowfullscreen></iframe>
+        </figure>
+      </section>
+
+      <!-- Team Section -->
+      <section>
+        <h2 class="text-wrapper-16">Our Team</h2>
+        <div class="team-member">
+            <article class="rectangle-10">
+                <div class="overlay">
+                    <p class="overlay-text">
+                        Alla served as the project manager, overseeing the team’s workflow and ensuring smooth coordination. She handled all project documentation, designed and built the entire exhibition website, and produced the exhibition video. In addition, she contributed to dataset preparation and full-stack machine learning development. Alla also compiled and delivered the presentation based on input gathered from team members.
+                    </p>
+                </div>
+            </article>
+            <a href="https://www.linkedin.com/in/alla-heinonen/" target="_blank">
+                <h3 class="text-wrapper-17">Alla Heinonen</h3>
+            </a>
+            <p class="project-manager-full">
+                Project Manager & <br> Full-Stack ML Contributor
+            </p>
+        </div>
+
+        <div class="team-member">
+            <article class="rectangle-11">
+                <div class="overlay">
+                    <p class="overlay-text"> Saad led the development and testing of ML models for local rainfall prediction, testing around 10 classical and deep learning approaches, including LSTM, Prophet, XGBoost and ensemble models. He handled dataset preparation, feature engineering, model fine-tuning, and pipeline setup, and contributed to the final presentation.
+                    </p>
+                </div>
+            </article>
+            <a href="https://www.linkedin.com/in/saad-tariq-a1b717326/" target="_blank">
+                 <h3 class="text-wrapper-19">Saad Tariq</h3>
+            </a>
+            <p class="text-wrapper-18">Machine Learning Specialist</p>
+        </div>
+        <div class="team-member">
+          <article class="rectangle-12">
+            <div class="overlay">
+              <p class="overlay-text">Rahat explored the sensor data, performed feature engineering, conducted exploratory data analysis (EDA), and created interactive HTML maps, including mean temperature and rainfall heat maps, as well as weather-over-time maps.</p>
+            </div>
+          </article>
+
+          <a href="https://www.linkedin.com/in/sajjadrahat/" target="_blank">
+            <h3 class="text-wrapper-20">Rahat Sajjad Mahmud</h3>
+          </a>
+          <p class="data-exploration">Data Exploration & Analysis</p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="rectangle-13">
+        <p class="ML-data-engineering">ML & Data Engineering Project — Autumn 2025</p>
+        <p class="text-wrapper-21">Forecasting local rainfall using AI models</p>
+        <p class="text-wrapper-22">Climate sensor data provided by Marjetas</p>
+        <p class="LHT-sensor">WS100 & LHT sensor network — Jyväskylä</p>
+        <p class="element-team-lapland">© 2025 Team 4 — Lapland UAS</p>
+        <p class="Video">
+          <a href="https://lucit.sharepoint.com/:w:/s/MachineLearningProject_8f8797-Team4/IQCxf1xU0b__TqedlNDNBXn7AQchDf25MJz-OC6lHQ72ZBM?e=y1YKnI" target="_blank">Project Report</a>
+        </p>
+        <p class="report-pdf">
+          <a href="https://youtu.be/h1SetIdfycw" target="_blank">Video Presentation</a>
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      // Dropdown toggle for individual model buttons
+      const buttons = document.querySelectorAll('.model-button');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const contentId = button.getAttribute('aria-controls');
+          const content = document.getElementById(contentId);
+
+          // Close all dropdowns
+          document.querySelectorAll('.model-content').forEach(c => {
+            c.style.display = 'none';
+          });
+          buttons.forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+          // Open clicked dropdown
+          content.style.display = 'block';
+          button.setAttribute('aria-expanded', 'true');
+
+          // Scroll smoothly to opened content
+          content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      // "View Our Top Models" button scrolls to first dropdown and opens it
+      const topModelsBtn = document.querySelector('.button');
+      topModelsBtn.addEventListener('click', e => {
+        e.preventDefault(); // prevent default anchor jump
+
+        const firstModelButton = document.querySelector('.model-button');
+        const firstContentId = firstModelButton.getAttribute('aria-controls');
+        const firstContent = document.getElementById(firstContentId);
+
+        // Close all dropdowns
+        document.querySelectorAll('.model-content').forEach(c => {
+          c.style.display = 'none';
+        });
+        buttons.forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+        // Open first dropdown
+        firstContent.style.display = 'block';
+        firstModelButton.setAttribute('aria-expanded', 'true');
+
+        // Scroll to the first model's content
+        firstContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    </script>
+  </body>
+</html>

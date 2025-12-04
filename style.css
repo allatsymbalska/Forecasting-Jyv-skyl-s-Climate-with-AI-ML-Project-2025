@@ -1,0 +1,1349 @@
+/* Import local TTF font */
+@font-face {
+  font-family: "Magfony";
+  src: url("fonts/Maghony.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT-Book";
+  src: url("fonts/FuturaPTBook.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura PT-Light";
+  src: url("fonts/FuturaPTLight.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body {
+  margin: 0;
+  background-color: #020d23;
+  padding-left: 20%;
+  padding-right: 20%;
+  position: relative;
+}
+
+.macbook-air {
+  width: 100%;
+  min-width: 1280px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*.macbook-air .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 962px;
+}
+
+ /* Global settings */
+html {
+  scroll-behavior: smooth;
+}
+
+.macbook-air .forecasting-jyv-skyl {
+  position: absolute;
+  top: 67px;
+  width: 573px;
+  text-shadow: 4px 3px 12px #a5eaffa3;
+  -webkit-text-stroke: 1px transparent;
+  background-image: linear-gradient(
+      149deg,
+      rgba(255, 247, 247, 1) 0%,
+      rgba(166, 234, 255, 1) 100%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Needed for gradient text */
+  font-family: "Magfony", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.macbook-air .text-wrapper {
+  position: absolute;
+  top: 340px;
+  width: 570px;
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 300;
+  color: #c7e5f6;
+  font-size: 32px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .button {
+  all: unset;
+  box-sizing: border-box;
+  position: absolute;
+  top: 718px;
+  
+  width: 265px;
+  height: 40px;
+  border-radius: 15px;
+  box-shadow: inset 7px 4px 9px #a5eaffe8, 2px 3px 9px #699ffcf2;
+  background: linear-gradient(
+    135deg,
+    rgba(131, 199, 245, 1) 0%,
+    rgba(105, 159, 252, 1) 100%
+  );
+}
+
+.macbook-air .button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(91, 159, 215, 1) 0%,
+    rgba(65, 129, 222, 1) 100%
+  );
+  box-shadow: inset 4px 3px 8px #8ed1ffe0, 1px 2px 6px #508be3f2;
+  cursor: pointer;
+}
+
+.macbook-air .div {
+  position: absolute;
+  width: 80.75%;
+  height: 80.00%;
+  top: 7.50%;
+  left: 9.81%;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .group-wrapper {
+  position: absolute;
+  top: 27px;
+  right: 5%;
+  width: 566px;
+  height: 858px;
+  display: flex;
+  padding: 0 0.5px;
+  align-items: flex-end;
+}
+
+.macbook-air .group {
+  width: 564px;
+  height: 854px;
+  position: relative;
+  
+}
+
+.macbook-air .mask-group {
+  position: absolute;
+  width: 564px;
+  height: 854px;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 6706.9px;
+}
+
+.macbook-air .map {
+  margin-top: 357.0px;
+  width: 563.53px;
+  height: 854px;
+  margin-left: -7272.0px;
+}
+
+.macbook-air .img {
+  margin-top: -1px;
+  width: 565.59px;
+  height: 855px;
+}
+
+.macbook-air .locations {
+  position: absolute;
+  top: 157px;
+  left: 222px;
+  width: 263px;
+  height: 277px;
+}
+
+.macbook-air .saaritie {
+  position: absolute;
+  top: 250px;
+  left: 104px;
+  width: 76px;
+  text-shadow: 0px 1px 4px #000b0f;
+  font-family: "Futura PT-Heavy", Helvetica;
+  font-weight: 400;
+  color: #f2f5ff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .tuulimyllyntie {
+  position: absolute;
+  top: 109px;
+  left: 0;
+  width: 116px;
+  text-shadow: 0px 1px 4px #000b0f;
+  font-family: "Futura PT-Heavy", Helvetica;
+  font-weight: 400;
+  color: #f2f5ff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .kaakkovuorentie {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  width: 165px;
+  text-shadow: 0px 1px 4px #000b0f;
+  font-family: "Futura PT-Heavy", Helvetica;
+  font-weight: 400;
+  color: #f2f5ff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .kotaniementie {
+  position: absolute;
+  top: 45px;
+  left: 123px;
+  width: 131px;
+  text-shadow: 0px 1px 4px #000b0f;
+  font-family: "Futura PT-Heavy", Helvetica;
+  font-weight: 400;
+  color: #f2f5ff;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/*.macbook-air .frame-2 {
+  position: absolute;
+  top: 962px;
+  left: 0;
+  width: 1280px;
+  height: 1366px;
+}*/
+
+
+.svg-banner img {
+  position: absolute;
+  top: 1020px; 
+}
+
+
+.macbook-air .text-wrapper-2 {
+  position: relative;
+  top: 1320px;
+  margin: 0 auto;
+  width: 1142px;
+  text-shadow: 4px 3px 12px #a5eaffa3;
+  -webkit-text-stroke: 1px transparent;
+  background-image: linear-gradient(
+      149deg,
+      rgba(255, 247, 247, 1) 0%,
+      rgba(166, 234, 255, 1) 100%
+    )
+    1;
+  -webkit-background-clip: text;
+  font-family: "Magfony", Helvetica;
+  font-weight: 400;
+  color: #c5e1f3;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .p {
+  position: relative;
+  top: 1340px;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 300;
+  color: #c7e5f6;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .content-wrapper {
+  position: absolute;
+  top: 300px;
+  margin: 0 auto;
+  width: 1180px;
+  height: 965px;
+}
+
+.macbook-air .xgboost-content {
+  position: absolute;
+  top: 2px;
+  margin: 0 auto;
+  width: auto;
+  height: 963px;
+  display: flex;
+  overflow: hidden;
+}
+
+.macbook-air .XG-boost {
+  width: 1190px;
+  height: 963px;
+  position: relative;
+}
+
+
+.macbook-air .container {
+  background-color: #c7e5f6;
+  width: 1180px;
+  height: 903px;
+  margin: 0 auto;           /* center inside dropdown */
+  padding: 40px;
+  border-radius: 20px;      /* optional, looks nicer */
+  position: relative;       /* prevents absolute chaos */
+}
+
+.macbook-air .container_2 {
+  background-color: #c7e5f6;
+  width: 1180px;
+  height: 973px;
+  margin: 0 auto;           /* center inside dropdown */
+  padding: 40px;
+  border-radius: 20px;      /* optional, looks nicer */
+  position: relative;       /* prevents absolute chaos */
+}
+
+.macbook-air .text-wrapper-3 {
+  position: absolute;
+  top: 33px;
+  left: 40px;
+  width: 1100px;
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 300;
+  color: #020d23;
+  font-size: 31px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-4 {
+  position: absolute;
+  top: 246px;
+  left: 40px;
+  width: 171px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #020d23;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-5 {
+  position: absolute;
+  top: 246px;
+  left: 609px;
+  width: 171px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #020d23;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-6 {
+  position: absolute;
+  top: 550px;
+  left: 42px;
+  width: 171px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #020d23;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-7 {
+  position: absolute;
+  top: 550px;
+  left: 611px;
+  width: full;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #020d23;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .rectangle-2 {
+  position: absolute;
+  top: 287px;
+  left: 42px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/lstm_Kaakkovuorentie_week1.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-3 {
+  position: absolute;
+  top: 287px;
+  left: 610px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/lstm_Kotaniementie_week1.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-4 {
+  position: absolute;
+  top: 591px;
+  left: 42px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/lstm_Saaritie_week1.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-5 {
+  position: absolute;
+  top: 591px;
+  left: 610px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/lstm_Tuulimyllyntie_week1.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-14 {
+  position: absolute;
+  top: 287px;
+  left: 42px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/xgboost_Kaakkovuorentie.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-15 {
+  position: absolute;
+  top: 287px;
+  left: 610px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/xgboost_Kotaniementie.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-16 {
+  position: absolute;
+  top: 591px;
+  left: 42px;
+  width: 529px;
+  height: 240px;
+  background-image: url("images/xgboost_Saaritie.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-17 {
+  position: absolute;
+  top: 591px;
+  left: 610px;
+  width: 529px;
+  height: 240px;background-image: url("images/xgboost_Kaakkovuorentie.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-18 {
+  position: absolute;
+  top: 287px;
+  left: 42px;
+  width: 529px;
+  height: 280px;
+  background-image: url("images/prophet_1.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-19 {
+  position: absolute;
+  top: 287px;
+  left: 610px;
+  width: 529px;
+  height: 280px;
+  background-image: url("images/prophet_2.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-20 {
+  position: absolute;
+  top: 641px;
+  left: 42px;
+  width: 529px;
+  height: 280px;
+  background-image: url("images/prophet_3.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .rectangle-21 {
+  position: absolute;
+  top: 641px;
+  left: 610px;
+  width: 529px;
+  height: 280px;background-image: url("images/prophet_2\(savgol\).png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .text-wrapper-26 {
+  position: absolute;
+  top: 600px;
+  left: 42px;
+  width: 171px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #020d23;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-27 {
+  position: absolute;
+  top: 600px;
+  left: 611px;
+  width: full;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #020d23;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .prophet-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1180px;
+  height: 965px;
+  display: flex;
+  overflow: hidden;
+}
+
+.macbook-air .prophet {
+  margin-top: 2px;
+  width: 1190px;
+  height: 963px;
+  position: relative;
+}
+
+.macbook-air .LSTM-content {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 1180px;
+  height: 962px;
+  display: flex;
+  overflow: hidden;
+}
+
+.macbook-air .lstm {
+  margin-top: -1px;
+  width: 1190px;
+  height: 963px;
+  position: relative;
+}
+
+.macbook-air .tab-button-default {
+  position: absolute;
+  top: 262px;
+  left: 316px;
+  width: 133px;
+  height: 40px;
+  box-shadow: inset 7px 4px 9px #a5eaffe8, 2px 3px 9px #699ffcf2;
+  background: linear-gradient(
+    135deg,
+    rgba(131, 199, 245, 1) 0%,
+    rgba(105, 159, 252, 1) 100%
+  );
+}
+
+.macbook-air .text-wrapper-8 {
+  position: absolute;
+  width: 55.64%;
+  height: 80.00%;
+  top: 15.00%;
+  left: 22.56%;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .div-wrapper {
+  position: absolute;
+  top: 262px;
+  left: 183px;
+  width: 133px;
+  height: 40px;
+  box-shadow: inset 7px 4px 9px #a5eaffe8, 2px 3px 9px #699ffcf2;
+  background: linear-gradient(
+    135deg,
+    rgba(131, 199, 245, 1) 0%,
+    rgba(105, 159, 252, 1) 100%
+  );
+}
+
+.macbook-air .text-wrapper-9 {
+  position: absolute;
+  width: 63.91%;
+  height: 80.00%;
+  top: 15.00%;
+  left: 18.05%;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .tab-button-default-2 {
+  position: absolute;
+  top: 262px;
+  left: 50px;
+  width: 133px;
+  height: 40px;
+  box-shadow: inset 7px 4px 9px #a5eaffe8, 2px 3px 9px #699ffcf2;
+  background: linear-gradient(
+    135deg,
+    rgba(131, 199, 245, 1) 0%,
+    rgba(105, 159, 252, 1) 100%
+  );
+}
+
+.macbook-air .text-wrapper-10 {
+  position: absolute;
+  width: 40.60%;
+  height: 80.00%;
+  top: 15.00%;
+  left: 30.08%;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-11 {
+  position: absolute;
+  top: 2860px;
+  left: 3%;       /* 1% from the left */
+  right: 3%;   
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 300;
+  color: #c7e5f6;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-12 {
+  position: absolute;
+  top: 3035px;
+  left: 50px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-30 {
+  position: absolute;
+  top: 3085px;
+  left: 50px;
+  width: 550px;
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-13 {
+  position: absolute;
+  top: 3621px;
+  left: 50px;
+  width: 570px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-28 {
+  position: absolute;
+  top: 3671px;
+  left: 50px;
+  width: 1080px;
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-14 {
+  position: absolute;
+  top: 3035px;
+  left: 680px;
+  width: 417px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-31 {
+  position: absolute;
+  top: 3085px;
+  left: 680px;
+  width: 550px;
+  font-family: "Futura PT-Light", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-15 {
+  position: absolute;
+  top: 2787px;
+  left: calc(50.00% - 572px);
+  width: 1142px;
+  text-shadow: 4px 3px 12px #a5eaffa3;
+  -webkit-text-stroke: 1px transparent;
+  background-image: linear-gradient(
+      149deg,
+      rgba(255, 247, 247, 1) 0%,
+      rgba(166, 234, 255, 1) 100%
+    )
+    1;
+  -webkit-background-clip: text;
+  font-family: "Magfony", Helvetica;
+  font-weight: 400;
+  color: #c5e1f3;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .project-goal {
+  position: absolute;
+  top: 4254px;
+  left: calc(50.00% - 572px);
+  width: 1142px;
+  text-shadow: 4px 3px 12px #a5eaffa3;
+  -webkit-text-stroke: 1px transparent;
+  background-image: linear-gradient(
+      149deg,
+      rgba(255, 247, 247, 1) 0%,
+      rgba(166, 234, 255, 1) 100%
+    )
+    1;
+  -webkit-background-clip: text;
+  font-family: "Magfony", Helvetica;
+  font-weight: 400;
+  color: #c5e1f3;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+.macbook-air .rectangle-6 {
+  position: absolute;
+  top: 3238px;
+  left: 50px;
+  width: 550px;
+  height: 354px;
+  background-color: #d9d9d9;
+}
+
+.macbook-air .rectangle-9 {
+  position: absolute;
+  top: 3238px;
+  left: 680px;
+  width: 550px;
+  height: 354px;
+  background-color: #d9d9d9;
+}
+
+
+.macbook-air .rectangle-7 {
+  position: absolute;
+  top: 3756px;
+  left: 50px;
+  width: 1180px;
+  height: 617px;
+  background-color: #020d23;
+}
+
+.macbook-air .text-wrapper-29 {
+  position: absolute;
+  top: 4467px;
+  left: calc(50.00% - 572px);
+  width: 1142px;
+  text-shadow: 4px 3px 12px #a5eaffa3;
+  -webkit-text-stroke: 1px transparent;
+  background-image: linear-gradient(
+      149deg,
+      rgba(255, 247, 247, 1) 0%,
+      rgba(166, 234, 255, 1) 100%
+    )
+    1;
+  -webkit-background-clip: text;
+  font-family: "Magfony", Helvetica;
+  font-weight: 400;
+  color: #c5e1f3;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.macbook-air .rectangle-8 {
+  position: absolute;
+  top: 4567px;
+  left: 50px;
+  width: 1180px;
+  height: 617px;
+  background-color: #d9d9d9;
+}
+
+.macbook-air .rectangle-8 iframe {
+  width: 100%;
+  height: 100%;
+  border: 0; /* removes iframe border */
+}
+
+.macbook-air .text-wrapper-16 {
+  position: absolute;
+  top: 5295px;
+  left: calc(50.00% - 572px);
+  width: 1142px;
+  text-shadow: 4px 3px 12px #a5eaffa3;
+  -webkit-text-stroke: 1px transparent;
+  background-image: linear-gradient(
+      149deg,
+      rgba(255, 247, 247, 1) 0%,
+      rgba(166, 234, 255, 1) 100%
+    )
+    1;
+  -webkit-background-clip: text;
+  font-family: "Magfony", Helvetica;
+  font-weight: 400;
+  color: #c5e1f3;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .rectangle-10 {
+  position: absolute;
+  top: 5390px;
+  left: 50px;
+  width: 305px;
+  height: 341px;
+  background-image: url("images/alla.jpg"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+/* Overlay hidden by default */
+.macbook-air .rectangle-10 .overlay,
+.macbook-air .rectangle-11 .overlay,
+.macbook-air .rectangle-12 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 13, 35, 0.9);  /* semi-transparent black */
+  color: #ffffff;
+  display: flex;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Show overlay on hover */
+.macbook-air .rectangle-10:hover .overlay,
+.macbook-air .rectangle-11:hover .overlay,
+.macbook-air .rectangle-12:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Optional: style text inside overlay */
+.macbook-air .overlay-text {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.macbook-air .rectangle-11 {
+  position: absolute;
+  top: 5390px;
+  left: 487px;
+  width: 305px;
+  height: 341px;
+  background-image: url("images/saad.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+
+.macbook-air .rectangle-12 {
+  position: absolute;
+  top: 5390px;
+  left: 925px;
+  width: 305px;
+  height: 341px;
+  background-image: url("images/rahat.png"); /* Replace with your image path */
+  background-size: cover; /* Make image cover the rectangle */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
+.macbook-air .text-wrapper-17 {
+  position: absolute;
+  top: 5740px;
+  left: 50px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6cc;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.macbook-air .project-manager-full {
+  position: absolute;
+  top: 5790px;
+  left: 50px;
+  width: 260px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6cc;
+  font-size: 25px;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-18 {
+  position: absolute;
+  top: 5790px;
+  left: 487px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6cc;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .data-exploration {
+  position: absolute;
+  top: 5790px;
+  left: 925px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6cc;
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-19 {
+  position: absolute;
+  top: 5740px;
+  left: 487px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6cc;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.macbook-air .text-wrapper-20 {
+  position: absolute;
+  top: 5740px;
+  left: 925px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6cc;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.macbook-air .rectangle-13 {
+  position: relative;
+  top: 5811px;
+  width: 100%;
+  height: 253px;
+  background-color: #000512;
+}
+
+.macbook-air .ML-data-engineering {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-21 {
+  position: absolute;
+  top: 110px;
+  left: 50px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-22 {
+  position: absolute;
+  top: 40px;
+  left: 487px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .LHT-sensor {
+  position: absolute;
+  top: 110px;
+  left: 487px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .Video a,
+.macbook-air .report-pdf a {
+  color: #c7e5f6; /* same as your paragraph text */
+  text-decoration: none; /* optional: remove underline */
+}
+
+.macbook-air .Video a:hover,
+.macbook-air .report-pdf a:hover {
+  color: #ffffff; /* change color on hover */
+  text-decoration: underline; /* optional */
+}
+
+.macbook-air .Video {
+  position: absolute;
+  top: 40px;
+  left: 924px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .report-pdf {
+  position: absolute;
+  top: 110px;
+  left: 924px;
+  width: 305px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .element-team-lapland {
+  position: absolute;
+  top: 220px;
+  left: calc(50.00% - 281px);
+  width: 562px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-23 {
+  position: absolute;
+  top: 5009px;
+  left: 924px;
+  width: 299px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-24 {
+  position: absolute;
+  top: 5040px;
+  left: 924px;
+  width: 299px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.macbook-air .text-wrapper-25 {
+  position: absolute;
+  top: 5071px;
+  left: 924px;
+  width: 299px;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #c7e5f6;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+/* Inject original CSS code here */
+
+.macbook-air .button {
+  cursor: pointer;
+}
+
+.macbook-air .button:hover {
+  opacity: 0.9;
+}
+
+.macbook-air .button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.macbook-air .tab-button-default,
+.macbook-air .div-wrapper,
+.macbook-air .tab-button-default-2 {
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.macbook-air .tab-button-default:hover,
+.macbook-air .div-wrapper:hover,
+.macbook-air .tab-button-default-2:hover {
+  opacity: 0.9;
+}
+
+.macbook-air .tab-button-default:focus,
+.macbook-air .div-wrapper:focus,
+.macbook-air .tab-button-default-2:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.macbook-air .text-wrapper-17:hover,
+.macbook-air .text-wrapper-19:hover,
+.macbook-air .text-wrapper-20:hover {
+  color: #ffffff;
+}
+
+.macbook-air .text-wrapper-17:focus,
+.macbook-air .text-wrapper-19:focus,
+.macbook-air .text-wrapper-20:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+
+/* Dropdown container */
+.model-dropdown-container {
+  position: absolute; /* absolute so it can be positioned relative to the page */
+  top: 1530px; /* adjust this so it appears just below your <h2> in frame-2 */
+  margin: 0 auto; /* horizontal alignment */
+  width: 100%; /* same width as your frame-2 content */
+  z-index: 1000; /* ensure it sits above other content */
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space between model buttons */
+}
+
+/* Model buttons */
+.model-button {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;       /* keep the original sizing */
+  border: none;
+  border-radius: 15px;      /* updated from 6px */
+  background: linear-gradient(
+    135deg,
+    rgba(131, 199, 245, 1) 0%,
+    rgba(105, 159, 252, 1) 100%
+  );
+  box-shadow: inset 7px 4px 9px #a5eaffe8, 2px 3px 9px #699ffcf2;
+  font-family: "Futura PT-Book", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.model-button:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(91, 159, 215, 1) 0%,
+    rgba(65, 129, 222, 1) 100%
+  );
+  box-shadow: inset 4px 3px 8px #8ed1ffe0, 1px 2px 6px #508be3f2;
+}
+
+.model-button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+
+/* Show content when active */
+.model-content.active {
+  display: block;
+
+}
+
+.kaakkovuorentie {
+  background-image: url("lstm_Kaakkovuorentie_week1.png");
+  background-size: cover;   /* image fills box */
+  background-position: center;
+}
+
+
